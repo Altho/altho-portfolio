@@ -14,13 +14,13 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Hello, I am <a href="/">Altho</a>
+          Hello, I am <a>Altho</a>
         </h1>
 
 
       </main>
 
-      
+
     </div>
   )
 }
