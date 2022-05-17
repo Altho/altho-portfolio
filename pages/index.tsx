@@ -1,23 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import TopMenu from "../components/TopMenu/TopMenu";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <meta name="Altho" content="Altho's portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hello, I am <a>Altho</a>
-        </h1>
-
-
+      <main>
+          <TopMenu />
       </main>
 
 
