@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import {useEffect, useRef } from 'react'
 import {useScroll, useTransform} from 'framer-motion'
-import { HeaderResponsive } from '../Components/Header'
+// import { HeaderResponsive } from '../Components/Header'
 import { AboutMe } from '../Components/Introduction'
 import { Presentation } from '../Components/presentation'
 import styles from '../styles/Home.module.css'
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
         <meta name="Altho" content="Altho's portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <HeaderResponsive links={links}/>
+        {/*<HeaderResponsive links={links}/>*/}
 
       <main className={styles.main}>
         <Presentation opacity={opacity} rocketMovement={rocketMovement}/>
