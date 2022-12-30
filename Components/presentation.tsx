@@ -17,7 +17,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 // @ts-ignore
-export function Presentation({opacity, rocketMovement}) {
+export function Presentation({opacity}) {
     const { classes } = useStyles();
 
 
@@ -46,20 +46,7 @@ export function Presentation({opacity, rocketMovement}) {
 
     return (
         <div>
-            <motion.div
-                style={{
-                    x: rocketMovement,
-                    y: rocketMovement,
-                    transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) "
-                }}
-            >
-                <Image
-                    className={classes.rocket}
-                    src="./bg_images/ship.svg"
-                    width={200}
 
-                ></Image>
-            </motion.div>
         <motion.div
             style={{ opacity: opacity}}
             className={styles.title}

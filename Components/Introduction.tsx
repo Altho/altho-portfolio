@@ -8,13 +8,14 @@ import { useRef } from 'react';
 
 const useStyles = createStyles((theme) => ({
     main: {
+        height: '100vh',
         padding: '20px',
         marginTop: '20px',
-        background: theme.colorScheme === 'dark' ? 'rgba(0, 0, 0, 0.3)' : 'rgba(255, 255, 255, 0.3)',
-        borderRadius: '15px',
-        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+        marginBottom: '50px',
         backdropFilter: 'blur(10px)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
+        lineHeight: 2.5,
+        fontSize: '1.2rem',
+        textAlign: 'justify'
 
     },
 
@@ -33,7 +34,7 @@ export function AboutMe() {
             className={classes.main}
             style={{
                 opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
             }}
 
 
